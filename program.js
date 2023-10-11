@@ -1,3 +1,6 @@
+var elmozgas = 0
+
+
 function teljeskepnyit(kep){
     var szepkapva = kep.split(".")
     document.getElementById("teljeskepkeret").style.display = "flex" ;
@@ -16,39 +19,35 @@ function teljeskepzar(){
     document.getElementById("teljeskepkeret").style.display = "none" ;
 }
 
-
-
-
-function kepbalra(){
-    var i = 0;
-  
-    function updatePosition() {
-      var mozgatas = i + "px";
-      document.getElementById('teljeskep').style.objectPosition = mozgatas;
-      
-      i+=5;
-      
-      if (i < 750) {
-        setTimeout(updatePosition, 1);
-      }
-    }
-    updatePosition();
+function kepbalra() {
+  elmozgas = balraMozgas(elmozgas)
 }
 
-
-
 function kepjobbra() {
-    var i = 0;
-  
-    function updatePosition() {
-      var mozgatas = i + "px";
-      document.getElementById('teljeskep').style.objectPosition = mozgatas;
-      
-      i-=5;
-      
-      if (i > -750) {
-        setTimeout(updatePosition, 1);
-      }
-    }
-    updatePosition();
+  elmozgas = jobbraMozgas(elmozgas)
+}
+
+function balraMozgas(elmozgas) {
+  if (elmozgas < 750) {
+  var mozgatas = elmozgas + "px";
+  document.getElementById('teljeskep').style.objectPosition = mozgatas;
+          
+  elmozgas++;
+         
+
+  setTimeout(balraMozgas, 1000);
   }
+  return elmozgas
+}
+
+function jobbraMozgas(elmozgas) {
+  if (elmozgas > -750) {
+  var mozgatas = elmozgas + "px";
+  document.getElementById('teljeskep').style.objectPosition = mozgatas;
+        
+  elmozgas--;
+       
+    setTimeout(jobbraMozgas, 1000);
+  }
+  return elmozgas
+}
