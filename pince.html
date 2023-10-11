@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <script src="program.js"></script>
+    <title>Pince</title>
+</head>
+<body>
+    <h1>A vasvári pincéje</h1>
+    
+    <div  id="teljeskepkeret">
+        <img src="download.jpg" id="teljeskep" >
+        <span id="kilep" onclick="teljeskepzar()">X</span>
+        <span id="elozoTerem" onmouseover="elozokep()"><</span>
+        <span id="kovetkezoTerem" onmouseover="kovetkezokep()">></span>
+        <span id="balra" onmouseover="kepbalra()" onmouseleave="kepvisszaJ()"><</span>
+        <span id="jobbra" onmouseover="kepjobbra()" onmouseleave="kepvisszaB()">></span>
+    </div>
+
+    <div class="elem">
+        <label for="k1">K1-es terem</label>
+        <img src="kepek/k1.jpg" class="terem" id="k1" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="k2">K2-es terem</label>
+        <img src="kepek/k2.jpg"  class="terem" id="k2" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="k3">K3-as terem</label>
+        <img src="kepek/k3.jpg"  class="terem" id="k3" onclick="teljeskepnyit(this.src)">
+    </div >
+
+    <div class="elem">
+        <label for="lepcsofoldszint2">Lépcső a földszint felé</label>
+        <a href="foldszint.html">
+        <img src=""  class="terem" id="lepcsofoldszint2" onclick="teljeskepnyit(this.src)">
+        </a>
+    </div>
+
+    <div class="elem">
+        <label for="folyosop">Első emeleti folyosó</label>
+        <img src="kepek/download.jpg"  class="terem" id="folyosop" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="lepcsofoldszint1">Lépcső a földszint felé</label>
+        <a href="foldszint.html">
+        <img src=""  class="terem" id="lepcsofoldszint1" onclick="teljeskepnyit(this.src)">
+        </a>
+    </div>
+
+    
+</body>
+</html>
