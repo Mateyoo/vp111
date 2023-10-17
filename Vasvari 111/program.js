@@ -4,6 +4,7 @@ function teljeskepnyit(kep){
     var szepkapva = kep.split(".");
     var szetkapva2 = szepkapva[0].split("/");
     var fajlnevszama = szetkapva2.length;
+    console.log(szepkapva, szetkapva2, fajlnevszama)
     aktualkep = szetkapva2[fajlnevszama-1];
     if(szetkapva2[fajlnevszama-1] == 'folyoso-1' || szetkapva2[fajlnevszama-1] == "folyoso0" 
     || szetkapva2[fajlnevszama-1] == "folyoso1" || szetkapva2[fajlnevszama-1] == "folyoso2" 
