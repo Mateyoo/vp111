@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <script src="program.js"></script>
+    <title>Földszint</title>
+</head>
+<body>
+    <a href=""><div id="visszaGomb">Vissza a főoldalra</div></a>
+    <h1>A vasvári földszintje </h1>
+
+    <div  id="teljeskepkeret">
+        <img src="" id="teljeskep" >
+        <span id="kilep" onclick="teljeskepzar()">X</span>
+        <span id="balra" onmouseover="kepbalra()" onmouseleave="kepvisszaJ()"><</span>
+        <span id="jobbra" onmouseover="kepjobbra()" onmouseleave="kepvisszaB()">></span>
+    </div>
+
+    <div class="elem">
+        <label for="_3">3. terem</label>
+        <img src="kepek/_3.jpg"  class="terem" id="_3" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_5">5. terem</label>
+        <img src="kepek/_5.jpg"  class="terem" id="_5" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_6">6. terem</label>
+        <img src="kepek/_6.jpg"  class="terem" id="_6" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_7">7. terem</label>
+        <img src="kepek/_7.jpg"  class="terem" id="_7" onclick="teljeskepnyit(this.src)">
+    </div >
+
+    <div class="elem">
+    <label for="_8">8. terem</label>
+    <img src="kepek/_8.jpg" class="terem" id="_8" onclick="teljeskepnyit(this.src)">
+    </div>
+    
+    <div class="elem">
+        <label for="_13">13. terem</label>
+        <img src="kepek/_13.jpg"  class="terem" id="_13" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_14">14. terem</label>
+        <img src="kepek/_14.jpg"  class="terem" id="_14" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_15">15. terem</label>
+        <img src="kepek/_15.jpg"  class="terem" id="_15" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_16">16. terem</label>
+        <img src="kepek/_16.jpg"  class="terem" id="_16" onclick="teljeskepnyit(this.src)">
+    </div>
+    
+    <div class="elem">
+        <label for="lepcsopince1">Lépcső a pince felé</label>
+        <a href="pince.html">
+        <img src="kepek/fold-pince1.jpg"  class="terem" id="lepcsopince1" >
+        </a>
+    </div>
+
+    <div class="elem">
+        <label for="folyoso0">Földszinti folyosó</label>
+        <img src="kepek/folyoso0.jpg"  class="terem" id="folyoso0" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="aula">Aula</label>
+        <img src="kepek/aula.jpg"  class="terem" id="aula" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="folyosoTerem3">3.terem folyosója</label>
+        <img src="kepek/folyoso3.jpg"  class="terem" id="folyosoTerem3" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="lepcso1emelet">Lépcső az 1. emelet felé</label>
+        <a href="elsoemelet.html">
+        <img src="kepek/foldszint-elso.jpg"  class="terem" id="lepcso1emelet" >
+        </a>
+    </div>
+    
+</body>
+</html>
