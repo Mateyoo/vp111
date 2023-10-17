@@ -9,9 +9,9 @@ function teljeskepnyit(kep){
     if(szetkapva2[fajlnevszama-1] == 'folyoso-1' || szetkapva2[fajlnevszama-1] == "folyoso0" 
     || szetkapva2[fajlnevszama-1] == "folyoso1" || szetkapva2[fajlnevszama-1] == "folyoso2" 
     || szetkapva2[fajlnevszama-1] == "aula") {
-      document.getElementById("teljeskep").src =szepkapva[0]+"."+szepkapva[1];
+      document.getElementById("teljeskep").src =szepkapva[2]+"."+szepkapva[3];
     }  else    {
-          document.getElementById("teljeskep").src = szepkapva[0]+"D."+szepkapva[1];
+          document.getElementById("teljeskep").src = szepkapva[2]+"D."+szepkapva[3];
     };
     document.getElementById("teljeskepkeret").style.display = "flex" ;
     return aktualkep
