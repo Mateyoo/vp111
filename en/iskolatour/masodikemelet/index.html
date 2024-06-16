@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="../../../public/style/iskolatour.css">
+    <script src="../../../public/files/iskolatour.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../../public/files/logo.svg">
+    <meta name="theme-color" content="#94347c">
+    <meta property=”og:title” content="Vasvári 111"/>
+    <meta property=”og:url” content="https://111.vasvari.org"/>
+    <meta property=”og:site_name” content="Vasvári 111"/>
+    <meta property=”og:image” content="https://111.vasvari.org/../../public/files/111.png"/>
+    <meta property=”og:type” content="website"/>
+    <meta property=”og:description” content="The 111.vasvari.org website was created for the 111th anniversary of the Szegedi SZC Vasvári Pál Secondary Technical School of Economics and IT."/>
+    <title>Vasvári 111 - Second floor</title>
+</head>
+<body>
+    <div class="bg-nav">
+        <header class="container-fluid pt-3">
+            <h1 class="text-center mb-0 pb-3">The second floor of Vasvári</h1>
+        </header>
+    
+    </div>
+    <main class="container mt-4">
+        <a href="../../" class="btn btn-sm btn-vp btn-fooldal"><i title="Back to the home page" class="fa-solid fa-arrow-left"></i> <span class="btn-fooldal-szoveg">Back to the home page</span></a>
+    </main>
+
+    <div  id="teljeskepkeret">
+        <img src="" id="teljeskep" >
+        <span id="kilep" onclick="teljeskepzar()">X</span>
+        <span id="balra" onmouseover="kepbalra()" onmouseleave="kepvisszaJ()"><</span>
+        <span id="jobbra" onmouseover="kepjobbra()" onmouseleave="kepvisszaB()">></span>
+    </div>
+
+    <div class="elem">
+        <label for="tani">Student office</label>
+        <img src="../../../public/files/panorama/tani.jpg"  class="terem" id="tani" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="nylab">Language lab</label>
+        <img src="../../../public/files/panorama/nyelvi.jpg"  class="terem" id="nylab" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="zsib">"Zsibongó"</label>
+        <img src="../../../public/files/panorama/zsib.jpg"  class="terem" id="zsib" onclick="teljeskepnyit(this.src)">
+    </div >
+
+    <div class="elem">
+    <label for="szt3">Computer room 3</label>
+    <img src="../../../public/files/panorama/szt3.jpg" class="terem" id="szt3" onclick="teljeskepnyit(this.src)">
+    </div>
+    
+    <div class="elem">
+        <label for="szt2">Computer room 2</label>
+        <img src="../../../public/files/panorama/szt2.jpg"  class="terem" id="szt2" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="szt1">Computer room 1</label>
+        <img src="../../../public/files/panorama/szt1.jpg"  class="terem" id="szt1" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_50">Classroom 50</label>
+        <img src="../../../public/files/panorama/_50.jpg"  class="terem" id="_50" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="folyoso2">Second floor corridor</label>
+        <img src="../../../public/files/panorama/folyoso2.jpg"  class="terem" id="folyoso1" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="lepcsoelsoszint">Stairs to the first floor</label>
+        <a href="../elsoemelet">
+        <img src="../../../public/files/panorama/masodik-elso.jpg"  class="terem" id="lepcsofoldszint" >
+        </a>
+    </div>
+
+    
+
+    <footer class="container-fluid text-center page-footer text-dark">
+        <div class="row">
+            <div class="col-12" id="vp-logo">
+                <img src="../../../public/files/logo.svg" class="img-fluid" alt="The logo of Vasvári">
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-1">© 2023 Copyright:
+          <a href="https://vasvari.hu"> vasvari.hu</a>
+        </div>
+        <div class="text-center">
+          <a href="https://github.com/Mateyoo/vp111" style="font-style: normal; text-decoration: none;" class="footer-text">
+            <i class="fa-brands fa-github"></i> 
+            The source code of the page
+          </a>
+          | 
+          <a href="../../keszitok/" style="font-style: normal; text-decoration: none;" class="footer-text">
+            <i class="fa-solid fa-user-group footer-icon"></i> 
+            Makers
+          </a>
+        </div>
+    </footer>
+</body>
+</html>
